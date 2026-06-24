@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Tasks</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin-top: 80px;
+        }
+
+        .container {
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #message {
+            color: #0066cc;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 id="message">Welcome to JavaScript!</h2>
+
+        <button onclick="showAlert()">
+            Show Alert
+        </button>
+
+        <button onclick="changeText()">
+            Change Text
+        </button>
+    </div>
+
+    <script>
+        function showAlert() {
+            alert("hey,This is an alert message.");
+        }
+
+        function changeText() {
+            document.getElementById("message").textContent =
+                "Text changed successfully🙂!";
+        }
+    </script>
+
+</body>
+</html>
